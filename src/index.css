@@ -11,13 +11,13 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     font-family: 'Nunito', sans-serif;
     background: #FDFAF8;
     color: #1C1017;
-    overflow-x: hidden;
   }
 }
 

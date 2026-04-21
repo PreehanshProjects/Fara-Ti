@@ -37,7 +37,9 @@ export default function Nav() {
         style={{
           background: 'rgba(253,250,248,0.92)',
           backdropFilter: 'blur(20px) saturate(180%)',
+          WebkitBackdropFilter: 'blur(20px) saturate(180%)',
           borderBottom: '1px solid rgba(249,168,201,0.25)',
+          transform: 'translateZ(0)',
         }}
       >
         <a
