@@ -36,7 +36,7 @@ export default function Hero() {
       }}
     >
       {/* Blob glows — clipped in their own layer so they don't escape the section */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="hero-blobs absolute inset-0 overflow-hidden pointer-events-none">
         <div
           className="absolute rounded-full"
           style={{

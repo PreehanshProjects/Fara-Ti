@@ -125,8 +125,7 @@ export default function Nav() {
             transition={{ duration: 0.18 }}
             className="fixed top-[68px] left-0 right-0 z-40 md:hidden"
             style={{
-              background: 'rgba(253,250,248,0.97)',
-              backdropFilter: 'blur(20px)',
+              background: 'rgb(253,250,248)',
               borderBottom: '1px solid rgba(249,168,201,0.3)',
               padding: '12px 16px 16px',
             }}

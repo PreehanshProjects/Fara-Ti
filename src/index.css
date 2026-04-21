@@ -72,18 +72,24 @@ section {
   margin: 0 auto;
 }
 
-/* ── Mobile: disable backdrop-filter on nav to prevent GPU compositing flicker ── */
+/* ── Mobile breakpoints ─────────────────────────────────── */
 @media (max-width: 768px) {
+  /*
+   * Kill ALL blur effects on mobile.
+   * backdrop-filter + filter:blur() each force a new GPU compositing layer.
+   * Too many layers on mobile = compositing artifacts / flickering when scrolling.
+   */
   .site-nav {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     background: rgb(253, 250, 248) !important;
-    transform: translateZ(0);
   }
-}
 
-/* ── Mobile breakpoints ─────────────────────────────────── */
-@media (max-width: 768px) {
+  /* Remove the expensive blur-glow blobs in the hero — purely decorative */
+  .hero-blobs {
+    display: none;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
