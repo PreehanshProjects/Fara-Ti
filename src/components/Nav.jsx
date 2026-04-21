@@ -33,7 +33,7 @@ export default function Nav() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 h-[68px]"
+        className="site-nav fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 h-[68px]"
         style={{
           background: 'rgba(253,250,248,0.92)',
           backdropFilter: 'blur(20px) saturate(180%)',

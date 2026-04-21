@@ -21,7 +21,7 @@ export default function Marquee() {
     >
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: 'marqueeScroll 24s linear infinite' }}
+        style={{ animation: 'marqueeScroll 24s linear infinite', willChange: 'transform' }}
       >
         {doubled.map((text, i) => (
           <span
