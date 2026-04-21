@@ -27,6 +27,12 @@
   }
 }
 
+/* ── Stacking context isolation — prevents GPU layer bleed on mobile scroll ── */
+section {
+  isolation: isolate;
+  position: relative;
+}
+
 /* ── Responsive grid layouts ────────────────────────────── */
 .hero-grid {
   display: grid;

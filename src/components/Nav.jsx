@@ -39,7 +39,6 @@ export default function Nav() {
           backdropFilter: 'blur(20px) saturate(180%)',
           WebkitBackdropFilter: 'blur(20px) saturate(180%)',
           borderBottom: '1px solid rgba(249,168,201,0.25)',
-          transform: 'translateZ(0)',
         }}
       >
         <a

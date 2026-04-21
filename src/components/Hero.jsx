@@ -28,40 +28,43 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex items-center overflow-hidden hero-section"
+      className="relative flex items-center hero-section"
       style={{
         minHeight: '100vh',
         padding: '40px 40px 60px',
         background: 'linear-gradient(135deg, #FFF0F8 0%, #FDF6FF 40%, #FFF8F0 100%)',
       }}
     >
-      <div
-        className="absolute rounded-full pointer-events-none"
-        style={{
-          width: 600, height: 600,
-          background: 'radial-gradient(#FDE8F2, transparent)',
-          filter: 'blur(80px)', opacity: 0.55,
-          top: -100, left: -150,
-        }}
-      />
-      <div
-        className="absolute rounded-full pointer-events-none"
-        style={{
-          width: 400, height: 400,
-          background: 'radial-gradient(#F5F3FF, transparent)',
-          filter: 'blur(80px)', opacity: 0.55,
-          bottom: 0, right: -80,
-        }}
-      />
-      <div
-        className="absolute rounded-full pointer-events-none"
-        style={{
-          width: 300, height: 300,
-          background: 'radial-gradient(#FFFBEB, transparent)',
-          filter: 'blur(80px)', opacity: 0.55,
-          bottom: 100, left: '30%',
-        }}
-      />
+      {/* Blob glows — clipped in their own layer so they don't escape the section */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute rounded-full"
+          style={{
+            width: 600, height: 600,
+            background: 'radial-gradient(#FDE8F2, transparent)',
+            filter: 'blur(80px)', opacity: 0.55,
+            top: -100, left: -150,
+          }}
+        />
+        <div
+          className="absolute rounded-full"
+          style={{
+            width: 400, height: 400,
+            background: 'radial-gradient(#F5F3FF, transparent)',
+            filter: 'blur(80px)', opacity: 0.55,
+            bottom: 0, right: -80,
+          }}
+        />
+        <div
+          className="absolute rounded-full"
+          style={{
+            width: 300, height: 300,
+            background: 'radial-gradient(#FFFBEB, transparent)',
+            filter: 'blur(80px)', opacity: 0.55,
+            bottom: 100, left: '30%',
+          }}
+        />
+      </div>
 
       <motion.div
         animate={{ y: [0, -16, 0], rotate: [0, 4, 0] }}
